@@ -11,7 +11,7 @@ import networkMapping from "../constants/networkMapping.json"
 export default function Home() {
     const { chainId } = useMoralis()
     const chainString = chainId ? parseInt(chainId).toString() : "31337"
-    const marketplaceAddress = networkMapping
+    const marketplaceAddress = "0x1797679aF31A350302683904f5D7E00BCE4dd44f"
     const { runContractFunction } = useWeb3Contract()
     const dispatch = useNotification()
     async function approveAndlist(data) {
