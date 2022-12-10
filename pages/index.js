@@ -17,7 +17,6 @@ export default function Home() {
             <h1 className="py-4 px-4 font-bold text-2xl">Recently Listed</h1>
             <div className="flex flex-wrap">
                 {isWeb3Enabled ? (
-                    (console.log(loading, listedNfts),
                     loading || !listedNfts ? (
                         <div>Loading...</div>
                     ) : (
@@ -35,7 +34,7 @@ export default function Home() {
                                 />
                             )
                         })
-                    ))
+                    )
                 ) : (
                     <div>Web3 Currently Not Enabled</div>
                 )}
